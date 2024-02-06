@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: poppins;
+    
+}
+html{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    
+    width: 100%;
+    height: 100%;
+ 
+
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    padding-top: 2px;
+}
+
+.container{
+    min-height: calc(100vh - 40px * 2);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.login-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: content;
+    padding-left: 50px;
+    background-color: white;
+}
+.login-right{
+    
+    justify-content: center;
+    position: relative;
+   
+    right: 0px;
+}
+.login-right img{
+    justify-content: center;
+    
+    position:absolute;
+    top: 50px;
+    right: 0px;
+ 
+}
+.login-right img:hover{  
+   }
+.login-header{
+    margin-top: 50px;
+}
+.login-header h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.login-header p{
+    margin-top: 20px;
+    opacity: .7;
+}
+.login-form{
+    width: 450px;
+    margin-top: 50px;
+}
+.login-content{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.login-footer{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.login-footer a{
+    flex: 6;
+    gap: 15px;
+    background-color: #eee;
+    border-radius: 100px;
+    padding: .6rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.form-tem label:not(.checkboxLabel){
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 0 10px;
+    transform: translate(30px, -10px);
+    font-size: 14px;
+}
+input[type='text'],
+input[type='email'],
+input[type='password']{
+    border: 1px solid black;
+    height: 50px;
+    padding: 0 2rem;
+    width: 80%;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-radius: 100px;
+    font-family: poppins;
+}
+.pass-key{
+    border: 1px solid black;
+    height: 55px;
+    padding: 0 2rem;
+    width: 100%;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-radius: 100px;
+}
+.show{
+    display: block;
+    position: absolute;
+    margin-left: 380px;
+    bottom: 250px;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+}
+label[for = email],
+label[for = password],
+label[for = text]{
+    font-size: 1.1rem;
+    padding-left: 10px;
+    font-weight: 4600;;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    accent-color: black;
+}
+button{
+    border: none;
+    padding: 1rem;
+    height: 55px;
+    font-size: 18px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: .5s;
+    width: 80%;
+    color: rgb(153, 152, 120)
+}
+button:hover{
+    background: black;
+    color: white;
+}
+::placeholder{
+    color: grey;
+    font-size: 1rem;
+}
